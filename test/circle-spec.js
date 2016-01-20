@@ -9,4 +9,10 @@ describe('Circle', () => {
         assert.equal(circle.area(4), expected)
     });
   });
+  describe('circumference', () => {
+    it('should correctly calculate the circumference of a circle', () => {
+        let expected = 62.83185307179586
+        assert.equal(circle.circumference(10), expected)
+    })
+  });
 });
