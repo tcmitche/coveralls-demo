@@ -1,6 +1,9 @@
-'use strict';
 const PI = Math.PI;
 
-exports.area = (r) => PI * r * r;
+exports.area = function (r) {
+  return PI * r * r;
+};
 
-exports.circumference = (r) => 2 * PI * r;
+exports.circumference = function (r) {
+  return 2 * PI * r;
+};
