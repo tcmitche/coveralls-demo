@@ -1,0 +1,26 @@
+{
+  "name": "coveralls-demo",
+  "version": "0.0.0",
+  "description": "A demo of coveralls.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tcmitche/coveralls-demo.git"
+  },
+  "author": "Travis Mitchell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tcmitche/coveralls-demo/issues"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.6",
+    "karma-coveralls": "^1.1.2",
+    "mocha-lcov-reporter": "^1.0.0"
+  }
+}
