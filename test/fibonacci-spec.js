@@ -18,5 +18,16 @@ describe('Fibonacci', function() {
       assert.equal(generator.next().value, 21)
       assert.equal(generator.next().value, 34)
     });
+    it('should reset if the generator is reset', function() {
+      let generator = fib.generator();
+      assert.equal(generator.next().value, 0)
+      assert.equal(generator.next().value, 1)
+      assert.equal(generator.next().value, 1)
+      assert.equal(generator.next().value, 2)
+      assert.equal(generator.next(true).value, 0)
+      assert.equal(generator.next().value, 1)
+      assert.equal(generator.next().value, 1)
+      assert.equal(generator.next().value, 2)
+    });
   });
 });
